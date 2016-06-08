@@ -1,0 +1,131 @@
+/* BASIC SETUP  */
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #fff;
+    font-family: 'latio', 'Arial', 'sans-serif';
+    font-weight: 400;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {zoom:1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*--------------------------*/
+/*    REUSABLE COMPONENTS   */
+/*--------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 40px 0;
+}
+
+
+
+
+
+/*--------------------------*/
+/*           HEADER         */
+/*--------------------------*/
+
+.nav {
+    background-color: #424242;
+    color: #fff;
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+}
+
+.nav li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.nav ul { 
+    display: block;
+    margin-left: 60%;
+    
+}
+
+.search-section {
+    position: relative;
+    padding: 20px 0;
+    background-image: linear-gradient(#ffffff, #ebebeb);
+    height: auto;
+}
+
+.search-section img:first-child {
+    margin-left: 7%;;
+}
+
+.search-bar {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35%;
+    background-color: #79b260;
+    margin-left: 5%;
+    border-radius: 4px;
+}
+
+.search-icon {
+    float: right;
+    position: absolute;
+    right: 28%;
+    top: 18%;
+}
+
+.search-section h2{
+    font-family: 'Source Sans Pro';
+    font-size: 170%;
+    font-weight: 400;
+    float: right; 
+    margin: 0 6px; 
+    color: #fff;
+}
+
+
+
+.search-section form {
+    position: absolute;
+    top: 12%;
+    left: 0.5%;
+    float: left;
+    display: block;
+    height: 40px;
+    width: 250px;
+    display: block;
+    margin: 1px 0;
+}
+
+.search-bar input {
+    margin-left: 4px;
+    height: 30px;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    
+}
+
+*:focus {
+    outline: none;
+}
+
