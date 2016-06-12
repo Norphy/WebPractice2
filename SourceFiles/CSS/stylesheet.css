@@ -11,6 +11,7 @@ html, body {
     font-family: 'latio', 'Arial', 'sans-serif';
     font-weight: 400;
     font-size: 20px;
+    color: #6d6d6d;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
 }
@@ -37,9 +38,27 @@ section {
     padding: 40px 0;
 }
 
+/*---------HEADINGS--------*/
 
 
+h1 {
+    font-family: 'Source Sans Pro';
+    font-size: 180%;
+    font-weight: 600;
+}
 
+
+h2 {
+    font-family: 'Source Sans Pro';
+    font-size: 150%;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: 'Source Sans Pro';
+    font-size: 90%;
+    font-weight: 400;
+}
 
 /*--------------------------*/
 /*           HEADER         */
@@ -67,10 +86,10 @@ section {
     position: relative;
     padding: 20px 0;
     background-image: linear-gradient(#ffffff, #ebebeb);
-    height: auto;
+    height: 130px;
 }
 
-.search-section img:first-child {
+.search-section .logo {
     margin-left: 7%;;
 }
 
@@ -80,6 +99,7 @@ section {
     top: 50%;
     transform: translateY(-50%);
     width: 35%;
+    height: 42px;
     background-color: #79b260;
     margin-left: 5%;
     border-radius: 4px;
@@ -88,44 +108,169 @@ section {
 .search-icon {
     float: right;
     position: absolute;
-    right: 28%;
-    top: 18%;
+    right: 21%;
+    top: 20%;
 }
 
-.search-section h2{
-    font-family: 'Source Sans Pro';
-    font-size: 170%;
-    font-weight: 400;
+.search-bar h2 {
     float: right; 
     margin: 0 6px; 
     color: #fff;
 }
 
-
-
 .search-section form {
     position: absolute;
-    top: 12%;
     left: 0.5%;
     float: left;
     display: block;
-    height: 40px;
-    width: 250px;
+    height: 36px;
+    width: 65%;
     display: block;
-    margin: 1px 0;
+    margin: 3px 0;
 }
 
 .search-bar input {
-    margin-left: 4px;
-    height: 30px;
+    margin-left: 1px;
+    height: 100%;
     width: 100%;
-    padding: 5px;
     border: none;
     border-radius: 4px;
-    
+    font-size: 100%;
 }
 
 *:focus {
     outline: none;
+}
+
+.cart {
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18%;
+    height: auto;
+    display: block;
+    border-right: 2px solid #c4c4c4;
+    padding-right: 1%;
+}
+
+.cart img {display: inline-block;}
+
+.cart h2 {
+    margin: 0 3%;
+    display: inline-block;
+}
+
+.cart h3 {display: inline-block;}
+
+.cart h1 {
+    display: inline-block;
+    color: #6d6d6d;
+}
+
+.cart p {color: #fff;}
+
+.cart .checkout {
+    display: inline-block;
+    margin-left: 7%;
+    padding: 3%;
+    background-image: linear-gradient(#414141,#232323);
+    box-shadow: -1px -1px 1px #232323;
+    border-radius: 2px;
+}
+
+.wishlist {
+    display: block;
+    position: relative;
+    /top: 50%;
+    transform: translateY(-90%);
+    left: 90%;
+    width: 9%;
+}
+
+.wishlist img {
+    display: inline-block;
+    margin-left: 23%;
+    width: 40px;
+}
+
+.number-20 {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 0 7%;
+    background-color: #79b260;
+    border-radius: 20px;
+}
+
+.wishlist h3 {color: #fff;}
+
+.nav2 {
+    height: 40px;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+}
+
+.nav2 ul {
+    height: 100%;
+    text-align: center;}
+
+.nav2 li {
+    display: inline-block;
+    height: 100%;
+    line-height: 40px;
+    white-space: nowrap;
+    margin-left: 0.5%;
+    padding: 0 1%;
+    transition: background 5s;
+}
+
+.nav2 li:hover {
+    color: #fff;
+    background-image: linear-gradient(#92d673 , #7ab361);
+}
+
+
+
+/*--------------------------*/
+/*          Display         */
+/*--------------------------*/
+
+.display {display: block;}
+
+.whole-display {
+    display: block;
+    margin: 0 auto;
+}
+.big-display {
+    display: block;
+    position: relative;
+    background-image: url(IMG/Bigdisplay.png);
+    background-size: cover;
+    background-position: center;
+    height: 304px;
+    width: 714px;
+    
+}
+
+.big-display .left,
+.right {
+    display: block;
+    background-color: rgba(47, 47, 47, 0.5);
+    padding: 3px 8px;
+    border-radius: 100%;
+    position: absolute;
+    top: 45%;
+}
+
+.big-display .left {left: 18px;}
+
+.big-display .right {right: 18px;}
+
+.small-display {
+    display: block;
+    background-image: url(IMG/deal%20of%20the%20month.png);
+    background-size: cover;
+    height: 305px;
+    width: 269px;
 }
 
