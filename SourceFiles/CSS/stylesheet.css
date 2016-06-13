@@ -239,17 +239,17 @@ h3 {
 
 .whole-display {
     display: block;
+    overflow: hidden;
+    width: 1000px;
     margin: 0 auto;
 }
+
 .big-display {
     display: block;
     position: relative;
     background-image: url(IMG/Bigdisplay.png);
-    background-size: cover;
-    background-position: center;
-    height: 304px;
-    width: 714px;
-    
+    min-height: 304px;
+    min-width: 714px;
 }
 
 .big-display .left,
@@ -269,8 +269,8 @@ h3 {
 .small-display {
     display: block;
     background-image: url(IMG/deal%20of%20the%20month.png);
-    background-size: cover;
-    height: 305px;
-    width: 269px;
+    min-height: 305px;
+    min-width: 269px;
+    background-repeat: no-repeat;
 }
 
