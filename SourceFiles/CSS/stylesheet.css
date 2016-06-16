@@ -297,6 +297,8 @@ h4 {
 .categories a {
     text-decoration: none;
     color: #6d6d6d;
+    cursor: pointer;
+    display: block;
 }
 
 .categories ul {}
@@ -327,7 +329,7 @@ h4 {
 /*    The Grid/Main Page    */
 /*--------------------------*/
 
-.main-page {}
+.main-page {display: flex;}
 
 .grid-nav {
     border-left: 1px solid #cacfd2;
@@ -344,6 +346,9 @@ h4 {
     border-top: 1px solid #cacfd2;
     border-right: 1px solid #cacfd2;
     border-left: 1px solid #fff;
+    margin-right: -5px;
+    margin-bottom: -1px;
+    cursor: pointer;
 }
 
 .grid-display {
@@ -369,7 +374,8 @@ h4 {
 }
 .grid-block {height: 280px;}
 
-.grid-is-active {
+.grid-nav .grid-is-active {
+    background-image: none;
     background-color: #fff;
-    border-bottom: 0;
+    border-bottom: 1px solid #fff;
 }
